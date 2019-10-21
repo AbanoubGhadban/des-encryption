@@ -30,4 +30,4 @@ def decrypt(cipher:str, key:str) -> str:
     hex_msg = ''
     for i in range(0, len(msg), 4):
         hex_msg += bin_to_hex(joinNumbers(msg[i:i+4]))
-    return hex_msg.rstrip('\x00')
+    return hex_msg.rstrip('0')
